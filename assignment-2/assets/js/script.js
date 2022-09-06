@@ -5,6 +5,7 @@ const btnPaper = document.querySelector('#btnPaper');
 const btnScissors = document.querySelector('#btnScissors');
 const divChoice = document.querySelector('#choice');
 const divResult = document.querySelector('#result');
+const allBtn = document.querySelectorAll('.btn');
 
 function computerPlay() {
     const computerOption = ['Rock', 'Paper', 'Scissors'];
@@ -47,14 +48,25 @@ function game(playerChoice) {
     return playRound(playerChoice, computer);
 }
 
+function stopGame(){
+    if(playerPoints === 5 || computerPoints === 5) {
+        for(let button of allBtn){
+            button.disabled = true;
+        }
+    }
+}
+
 btnRock.onclick = () => {
     game('Rock');
+    stopGame();   
 }
 
 btnPaper.onclick = () => {
     game('Paper');
+    stopGame();
 }
 
 btnScissors.onclick = () => {
     game('Scissors');
+    stopGame();
 }

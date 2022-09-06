@@ -16,7 +16,7 @@ body {
     margin-bottom: 20px;
 }
 
-button {
+.btn {
     border: none;
     background: rgb(38, 38, 89);
     color: #fff;
@@ -26,9 +26,13 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
     background: none;
     border: 1px solid rgb(38, 38, 89);
     color: #000;
     padding: 9px 29px;
+}
+
+.btn:disabled{
+    cursor: not-allowed;
 }
