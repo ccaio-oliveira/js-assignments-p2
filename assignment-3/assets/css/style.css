@@ -1,0 +1,28 @@
+body {
+    background: #000;
+}
+
+#container {
+    margin: 100px auto;
+    padding: 30px;
+    width: 20%;
+    background: #c5c5c5;
+}
+
+.display{
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.btn {
+    background: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.btn:hover {
+    background: rgb(190, 189, 189);
+    cursor: pointer;
+}
